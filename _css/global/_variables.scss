@@ -1,0 +1,53 @@
+// Screen =======================================================================
+// Width
+$width-blog: 790px; // padding: 0 40px;
+// Break Points
+$breakpoints: (
+  'sm': (min-width: 640px),
+  'md': (min-width: 768px),
+  'lg': (min-width: 1024px),
+  'xl': (min-width: 1280px)
+) !default;
+// Font ========================================================================
+$font-base: -apple-system,                //macOS,iOS 適用フォントはSan Francisco(iOS11以前は少し違う)
+             BlinkMacSystemFont,          //macOSのChromeとOpera 適用フォントはSan Francisco
+             "Segoe UI",                  //Windows
+             Roboto,                      //Android
+             "Hiragino Kaku Gothic ProN", //日本語フォント macOS,iOS(Hiragino Sansより細く、bold時の黒潰れの無さが好み)
+             "Yu Gothic",                 //日本語フォント Windows
+             sans-serif,                  //全OS共通
+             "Apple Color Emoji",
+             "Segoe UI Emoji",
+             "Segoe UI Symbol",
+             "Noto Sans Emoji";
+
+// Color =======================================================================
+// Font Color
+$color-text-black:             #424242;
+$color-text-black-dark:        #212121;
+$color-text-white:             #fff;
+$color-text-white-dark:        #bcbcbc;
+// Background Color
+$color-background-white:       #f5f5f5;
+$color-background-black:       #4b4b4b;
+$color-background-black-light: #656565;
+
+// Space =======================================================================
+$spacing-half: 4px;
+$spacing-1: 8px;
+$spacing-2: 16px;
+$spacing-3: 24px;
+$spacing-4: 32px;
+$spacing-5: 48px;
+$spacing-6: 64px;
+$spacing-7: 96px;
+$spacing-8: 128px;
+$spacing-9: 192px;
+$spacing-10: 256px;
+
+// Style =======================================================================
+%flex_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

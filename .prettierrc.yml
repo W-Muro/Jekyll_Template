@@ -1,0 +1,5 @@
+overrides:
+  - files: "*.html"
+    options:
+      htmlWhitespaceSensitivity: "ignore" # 空白の処理
+      jsxBracketSameLine: true            # 末尾の>を改行するか

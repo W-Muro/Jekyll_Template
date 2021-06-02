@@ -1,0 +1,55 @@
+title: ""
+email: ""
+description: >-
+  サイトの説明。pc120文字、スマホ50字程度が目安
+url: ""
+baseurl: ""
+repository: ""
+timezone: Asia/Tokyo
+
+# excerpt_separator: <!--more-->
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      group: "blog"
+
+# sass:
+#   sass_dir: assets/_sass
+#   style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  # - github-pages
+
+pagination:
+  enabled: true
+  per_page: 12
+  permalink: '/:num/'
+  title: ':title'
+  sort_reverse: true
+  trail:
+    before: 999
+    after: 999
+
+include:
+  - _pages
+
+exclude:
+  - package.json
+  - package-lock.json
+  - gulpfile.js
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

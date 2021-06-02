@@ -1,0 +1,16 @@
+@use "../global/global" as g;
+
+.default{
+  display: flex;
+  gap: 5px;
+  border-radius: 5px;
+}
+h1{
+  color: red;
+}
+h2{
+  color: pink;
+}
+h3{
+  color: green;
+}

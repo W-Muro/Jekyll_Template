@@ -1,0 +1,19 @@
+- service: Twitter
+  link: #url
+  user_name: #ユーザーネーム
+
+- service: Instagram
+  link: #url
+  user_name: #ユーザーネーム
+
+- service: note
+  link: #url
+  user_name: #ユーザーネーム
+
+- service: YouTube
+  link: #url
+  user_name: #ユーザーネーム
+
+- service: GitHub
+  link: #url
+  user_name: #ユーザーネーム

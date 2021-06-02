@@ -1,0 +1,2 @@
+"use strict";var message="hello",val=22,greeting=function(l){return l+" world"};console.log(greeting(message),val);var val=1,num2=4,calc=function(l,e){return val+e};console.log(calc(val,num2));var _val="hi";console.log(_val);
+//# sourceMappingURL=map/app.js.map

@@ -1,0 +1,31 @@
+@use "../global/global" as g;
+
+html {
+  font-size: 10px;
+}
+body{
+  width: 100%;
+  color: g.$color-text-black;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: .03em;
+  font-family: g.$font-base;
+  position: relative;
+  font-feature-settings: "palt"; // プロポーショナルフォントの適用
+}
+pre{
+  font-family: inherit;
+  white-space: pre-wrap;
+}
+strong{
+  font-weight: 700;
+  color: g.$color-text-black-dark;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: g.$color-text-black-dark;
+}
