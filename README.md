@@ -5,7 +5,6 @@
 1. [ディレクトリ構成と説明](#directory-structure)
 2. [CSS設計](#css-design)
 3. [Gulp](#gulp)
-4. [Prettier](#prettier)
 
 Jekyllについて詳しくはこちら  
 [Jekyll公式](https://jekyllrb.com/)  
