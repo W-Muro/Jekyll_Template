@@ -2,13 +2,72 @@
 以下の順に説明した内容になっています。  
 （主に自分用の記録です。）
 
-1. [ディレクトリ構成と説明](#directory-structure)
-2. [CSS設計](#css-design)
-3. [Gulp](#gulp)
+1. [使い方](#how-to-use)
+2. [ディレクトリ構成と説明](#directory-structure)
+3. [CSS設計](#css-design)
+4. [Gulp](#gulp)
 
 Jekyllについて詳しくはこちら  
 [Jekyll公式](https://jekyllrb.com/)  
 [日本語版サイト](http://jekyllrb-ja.github.io/)
+
+<br>
+<br>
+<br>
+<h2 id="how-to-use">使い方</h2>
+
+### ダウンロード
+GitHubからzipファイルをダウンロードするか、以下のコードでクローン
+
+```tcl
+$ git clone git@github.com:W-Muro/Jekyll_Template.git DIRECTORY_NAME
+```
+
+### Gemの確認
+WindowsかJRubyを使用している場合と、GitHub Pagesを使用する場合は、Gemfileで必要なGemの確認をしてください。
+
+### 準備
+作成したディレクトリへ移動し、必要なライブラリのインストール
+
+```tcl
+  # gemfileを元にgemのインストール
+$ bundle update
+
+  # package.jsonを元にローカルにパッケージをインストール
+$ npm install -D
+```
+
+### 動作確認
+JekyllサーバーとGulpが正常に動作するか確認します。
+
+```
+  # Jekyllサーバーが起動するかの確認
+$ bundle exec jekyll server
+
+  # Gulpが機能するかの確認
+$ npx gulp
+```
+
+### Gitの初期化
+
+```tcl
+  # Gitの初期化
+$ git init
+
+  # リモートリポジトリの確認
+$ git remote -v
+origin	git@github.com:W-Muro/Jekyll_Template.git (fetch)
+origin	git@github.com:W-Muro/Jekyll_Template.git (push)
+
+  # 新しいリモートリポジトリのセット
+$ git remote set-url origin git@github.com:NEW_REPOSITORY
+
+  # リモートリポジトリ変更の確認
+$ git remote -v
+origin	git@github.com:NEW_REPOSITORY (fetch)
+origin	git@github.com:NEW_REPOSITORY (push)
+```
+
 
 <br>
 <br>
