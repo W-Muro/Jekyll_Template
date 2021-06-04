@@ -20,7 +20,7 @@ Jekyllについて詳しくはこちら
 GitHubからzipファイルをダウンロードするか、以下のコードでクローン
 
 ```tcl
-$ git clone git@github.com:W-Muro/Jekyll_Template.git DIRECTORY_NAME
+$ git clone git@github.com:W-Muro/Jekyll_Template.git <DIRECTORY_NAME>
 ```
 
 ### Gemの確認
@@ -40,7 +40,7 @@ $ npm install -D
 ### 動作確認
 JekyllサーバーとGulpが正常に動作するか確認します。
 
-```
+```tcl
   # Jekyllサーバーが起動するかの確認
 $ bundle exec jekyll server
 
