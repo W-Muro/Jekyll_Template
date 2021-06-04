@@ -582,6 +582,9 @@ const watcher = () => {
     port: 4000,
     server: {
       baseDir: siteRoot,
+      serveStaticOptions: {
+        extensions: ["html"],      // 拡張子省略(無いと/*.htmlでアクセスしないとファイルが見つからない)
+      },
     },
   });
   watch(srcPath.css, compileSass); // 変更の監視

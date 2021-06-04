@@ -93,6 +93,9 @@ const watcher = () => {
     port: 4000,
     server: {
       baseDir: siteRoot,
+      serveStaticOptions: {
+        extensions: ["html"],
+      },
     },
   });
   watch(srcPath.css, compileSass);
