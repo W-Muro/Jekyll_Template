@@ -30,9 +30,10 @@ const compileSass = () => {
         outputStyle: "compressed",
       }).on("error", sass.logError))
       .pipe(concat("style.css"))
-      .pipe(postcss([autoprefixer({
-        cascade: false,
-      }),
+      .pipe(postcss([
+        autoprefixer({
+          cascade: false,
+        }),
       ]))
       .pipe(dest("assets/css", {sourcemaps: "./map"}))
   );
@@ -53,7 +54,7 @@ const compileJs = () => {
 
 // Jekyllサーバーの起動
 const jekyllServe = (callback) => {
-  spawn("jekyll", ["serve"], {
+  spawn("bundle", ["exec", "jekyll", "serve"], {
     stdio: "inherit",
   });
   callback();
@@ -80,7 +81,7 @@ const prettier = () => {
   });
 };
 
-const runPrettier = (callback) => {
+const delayPrettier = (callback) => {
   setTimeout(prettier, 3000);
   callback();
 };
@@ -106,8 +107,8 @@ exports.default = series(
     compileJs,
   ),
   parallel(
-    watcher,
     jekyllServe,
+    watcher,
   ),
 );
 
@@ -117,7 +118,7 @@ exports.build = series(
     compileJs,
   ),
   jekyllBuild,
-  runPrettier,
+  delayPrettier,
 );
 
 exports.jekyllServe = jekyllServe;

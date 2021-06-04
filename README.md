@@ -511,7 +511,7 @@ const prettier = () => {
   });
 };
 
-const runPrettier = (callback) => {             // ビルド完了前に実行されないように遅延措置
+const delayPrettier = (callback) => {             // ビルド完了前に実行されないように遅延措置
   setTimeout(prettier, 3000);
   callback();
 };
@@ -548,7 +548,7 @@ exports.build = series(             // ビルドの実行(npx gulp build)
     compileJs,
   ),
   jekyllBuild,
-  runPrettier,                      // そのままprettierを実行するとビルドが間に合わないので遅延措置
+  delayPrettier,                      // そのままprettierを実行するとビルドが間に合わないので遅延措置
 );
 
 exports.jekyll = jekyll;            // 個別で実行するためのエクスポート(npx gulp jekyll)

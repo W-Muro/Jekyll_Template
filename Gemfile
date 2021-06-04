@@ -11,7 +11,6 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
   gem "jekyll-paginate-v2"
-  # gem "jekyll-minifier"
 end
 
 # Windows、JRubyを使用している場合は以下を確認
